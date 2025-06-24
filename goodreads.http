@@ -2,7 +2,7 @@ GET http://localhost:3000/books/
 
 ###
 
-GET http://localhost:3000/books/?offset=2&limit=3&search_q=potter&order_by=price&order=DESC
+GET http://localhost:3000/books/?offset=2&search_q=potter&order_by=price&order=DESC
 
 ###
 

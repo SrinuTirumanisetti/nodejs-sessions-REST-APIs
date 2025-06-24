@@ -27,7 +27,13 @@ initializeDBAndServer();
 
 // Get Books API
 app.get("/books/", async (request, response) => {
-  const { offset, limit, order_by, order, search_q } = request.query;
+  const {
+    offset = 2,
+    limit = 1,
+    order_by = "book_id",
+    order = "ASC",
+    search_q = "",
+  } = request.query;
   const getBooksQuery = `
     SELECT
       *
